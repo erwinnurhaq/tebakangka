@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="ie=edge" http-equiv="X-UA-Compatible">
+        <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+        <link crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" rel="stylesheet">
+        <style>
+            html,
+            body {
+                font-family: sans-serif;
+                color: #222;
+                font-size: 14px;
+            }
+            .wrapper {
+                min-height: 100vh;
+                display: flex;
+                align-items: center;
+            }
+            .container-fluid {
+                background-color: lightskyblue;
+                padding: 30px;
+            }
+            .box {
+                height: 200px;
+                width: 200px;
+                border-radius: 100px;
+                background-color: #222;
+                box-shadow: 0 0 30px white;
+            }
+        </style>
+        <title>Tebak Angka</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <h1 class="my-1 text-light">T E B A K
+                                <b>A N G K A</b>
+                            </h1>
+                            <p>Coba tebak angka sebenarnya yang ada pada lingkaran hitam disamping<br>(random antara 1-10):</p>
+                            <hr>
+                            <div class="row">
+                                <div class="col-9">
+                                    <input class="form-control" id="inputAngka" placeholder="Masukkan angka random">
+                                </div>
+                                <div class="col-3">
+                                    <button class="btn btn-primary" onclick="cek()" type="submit">CEK</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 d-flex flex-column align-items-center text-center">
+                            <div class="box d-flex align-items-center justify-content-center">
+                                <p class="display-1 text-warning" id="hasil"></p>
+                            </div>
+                            <br>
+                            <div>
+                                <p class="text-danger" id="hasiltext"></p>
+                                <hr>
+                                <a href="/index.html" id="lagitext"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--JS, Popper.js, and jQuery-->
+
+        <script src="./tebakangka.js"></script>
+
+        <script crossorigin="anonymous" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <script crossorigin="anonymous" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script crossorigin="anonymous" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    </body>
+</html>
