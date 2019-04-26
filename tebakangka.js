@@ -18,4 +18,11 @@ function cek() {
     }
 
     document.getElementById("hasiltext").innerHTML = ht;
+    document.getElementById("inputAngka").value = "";
+}
+
+document.getElementById("inputAngka").onkeydown = function (i) {
+    if (i.keyCode === 13) {
+        cek();
+    }
 }
